@@ -29,7 +29,7 @@ a {
 }
 
 .container {
-  height: 700px;
+  height: 750px;
   display: flex;
   justify-content: center;
   padding-top: 100px;
@@ -156,10 +156,12 @@ nav {
 }
 .about {
   background-color: #f9f9f9;
+  height: 800px;
+  margin-bottom: 20px;
 }
 /* About Section */
 .about h2 {
-  padding: 60px 20px;
+  padding: 20px 20px;
 
   text-align: center;
   font-size: 36px;
@@ -211,13 +213,15 @@ nav {
   flex-wrap: wrap; /* Allows wrapping to the next row */
   gap: 20px; /* Space between items */
   justify-content: center;
-  height: 1200px;
+  height: 1100px;
 }
 
-div h2 {
+.pro {
   margin-top: 10% 0 0 0;
   display: flex;
   justify-content: center;
+  font-size: 36px;
+  margin: 30px;
 }
 .projects h2 {
   font-size: 36px;
@@ -228,9 +232,9 @@ div h2 {
   height: 500px;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+
   gap: 20px; /* Space between text and image */
-  padding-left: 70px;
+  padding: 0 50px;
 }
 
 .project {
@@ -257,19 +261,9 @@ div h2 {
   object-fit: contain;
 }
 
-.project h3 {
-  margin: 15px 0;
-  font-size: 24px;
-}
-
-.project p {
+/* .project .btn {
   font-size: 16px;
-  margin-bottom: 15px;
-}
-
-.project .btn {
-  font-size: 16px;
-}
+} */
 
 /* Contact Section */
 .contact {
