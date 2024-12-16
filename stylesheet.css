@@ -199,23 +199,33 @@ nav {
   padding: 40px 20px 20px 20px;
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-left: 40%;
 }
 .about-text {
-  max-width: 650px;
+  max-width: 800px;
   text-align: left;
   margin-left: 10%;
 }
 .skills {
   background-color: #f5dde5;
-  height: 300px;
-  display: flex;
+  height: 280px;
+  margin-bottom: 20px;
   font-size: 20px;
-  /* justify-content: center; */
 
-  text-align: center;
+  /* justify-content: center; */
 }
 
+.skills p {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 12%;
+  scroll-padding: 10px;
+}
+.about-text div {
+  max-width: 900px;
+}
 .about-text p {
   font-size: 18px;
   line-height: 1.8;
@@ -333,9 +343,14 @@ footer {
   text-align: center;
 }
 
+.social-links {
+  margin-top: 50px;
+}
 .social-links a {
-  margin: 0 10px;
-  color: #fff;
+  padding-top: 10%;
+  padding-right: 50px;
+  white-space: 20px;
+  color: rgb(247, 99, 124);
   font-size: 18px;
   transition: color 0.3s ease;
 }
