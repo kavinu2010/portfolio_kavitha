@@ -31,3 +31,4 @@ document.addEventListener("DOMContentLoaded", () => {
     section.style.display = "block";
   });
 });
+document.getElementById("year").textContent = new Date().getFullYear();
