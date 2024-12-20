@@ -1,37 +1,33 @@
-// Burger Menu Toggle
-const burger = document.querySelector(".burger");
-const nav = document.querySelector(".nav-links");
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-links a");
+  const sections = document.querySelectorAll(".section");
 
-burger.addEventListener("click", () => {
-  nav.classList.toggle("nav-active");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
 
-  // Burger Animation
-  burger.classList.toggle("toggle");
-});
+      // Get the target section
+      const targetSection = document.querySelector(link.getAttribute("href"));
 
-// Contact Form Handling with EmailJS
-// Make sure to include EmailJS SDK in index.html or via script tag
-// For this example, we'll load it via script tag in HTML
-
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    // Initialize EmailJS with your user ID
-    emailjs.init("kavinu2010");
-
-    // Send the form data
-    emailjs.sendForm("service_rx5v2ip", "template_m59zsjn", this).then(
-      function () {
-        document.getElementById("form-status").textContent =
-          "Message sent successfully!";
-        document.getElementById("contact-form").reset();
-      },
-      function (error) {
-        document.getElementById("form-status").textContent =
-          "Failed to send message. Please try again.";
-        console.error("FAILED...", error);
+      if (targetSection) {
+        // For the "Home" button, ensure all sections remain visible
+        if (targetSection.id === "home") {
+          sections.forEach((section) => {
+            section.style.display = "block"; // Show all sections
+          });
+        } else {
+          // Hide all sections except the target one
+          sections.forEach((section) => {
+            section.style.display = "none";
+          });
+          targetSection.style.display = "block"; // Show the target section
+        }
       }
-    );
+    });
   });
+
+  // Initially, display all sections
+  sections.forEach((section) => {
+    section.style.display = "block";
+  });
+});

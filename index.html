@@ -4,19 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <!-- Link to CSS -->
+     
     <link rel="stylesheet" href="stylesheet.css" />
-    <!-- Google Fonts (Optional) -->
+    
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    /> -->
+     
   </head>
   <body>
 
-    <!-- Header Section -->
+     
     <header>
       <nav class="nav">
         <div class="logo">MyPortfolio</div>
@@ -36,8 +33,9 @@
         
     </header>
 
-
-   <div class="container">
+ <section id="home" class="home section"> 
+   <div class="container   ">
+    
         <div class="text">
             <h1>Hi, Meet Kavitha</h1>
             <div class="moving-text">
@@ -54,7 +52,7 @@
         <a href="https://linkedin.com/in/kavitha-m-s/" target="_blank"
           >LinkedIn</a
         >
-        <!-- Add more social links as needed -->
+        
       </div>
         </div>
         <div class="image">
@@ -62,8 +60,8 @@
             <img src="images/dp2.png" alt="Description of the image">
         </div> 
     </div>
-    <!-- About Section -->
-    <section id="about" class="about">
+ </section>
+    <section id="about" class="about section">
       <h2>About Me</h2>
       <div class="about-content">
         <div class="profile-card">
@@ -107,7 +105,7 @@
 <div>
      
 </div>
-<section id="tech_stack" class="tech_stack">
+<section id="tech_stack" class="tech_stack section">
     <div class="skills">
     <div class='heading'>
       <h2>Tech and Skills</h2> <p>
@@ -117,52 +115,54 @@
        API Testing, SDLC, and Object-Oriented Programming (OOP).</p> 
   </div>
   </div></section>
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-       <!-- <h2>My Project</h2> -->
+    
+    <section id="projects" class="projects section">
+        
        <h2 class="pro">Inspired & created </h2>
 <p>This is my portfolio displaying my works.
    Beautiful Webpages, Designs using HTML, CSS, Javascript,
   Django  & fun game project using pygame.</p>
        <div class="projects-container">
           <div class="project">
-          <img src="images/pancake.jpeg" alt="Project 2" />
+            <a href="https://github.com/kavinu2010/Food_recipes" target="_blank"><img src="images/pancake.jpeg" alt="Project 1" /></a>
+          
           <h3>Project Title 2</h3>
           <p>Short description of the project.</p>
           <a href="#" class="btn">View </a>
           </div>
          <div class="project">
-          <img src="images/sys_control.png" alt="Project 2" />
+          <a href="https://github.com/kavinu2010/system_control" target="_blank"><img src="images/sys_control.png" alt="Project 2" /></a>
+          
            
-          <!-- <p>Short description of the project.</p>
-          <a href="#" class="btn">View </a> -->
+           
          </div>
          <div class="project">
-          <img src="images/text_spk.png" alt="Project 2" />
+          <a href="https://github.com/kavinu2010/Text_speak" target="_blank"><img src="images/text_spk.png" alt="Project 3" /></a>
+          
            
-          <!-- <p>Short description of the project.</p>
-          <a href="#" class="btn">View </a> -->
+           
           </div>
          
         </div>   
         <div class="projects-container">
           <div class="project">
-          <img src="images/task_manager.png" alt="Project 2" />
+            <a href="https://github.com/kavinu2010/Task_manager" target="_blank"><img src="images/task_manager.png" alt="Project 4" /></a>
+          
            
-          <!-- <p>Short description of the project.</p>
-          <a href="#" class="btn">View </a> -->
+           
           </div>
          <div class="project">
-          <img src="images/solar.png" alt="Project 2" />
+          <a href="https://github.com/kavinu2010/Project_cart" target="_blank"><img src="images/PRODUCT_CART.png" alt="Project 5" /></a>
+          
            
           <p>Short description of the project.</p>
           <a href="#" class="btn">View </a>
          </div>
          <div class="project">
-          <img src="images/snake_game.png" alt="Project 2" />
+          <a href="https://github.com/kavinu2010/snake_game_python" target="_blank"><img src="images/snake_game.png" alt="Project 6" /></a>
+          
            
-          <!-- <p>Short description of the project.</p>
-          <a href="#" class="btn">View </a> -->
+           
           </div>
          
         </div>   
@@ -172,51 +172,34 @@
 
   
   
- 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="user_name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="user_email" required />
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="user_message"
-            rows="5"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn">Send Message</button>
-        <p id="form-status"></p>
-      </form>
-    </section>
-
-    <!-- Footer Section -->
+  <section id="contact" class="contact section">
+     
+    <div class="c-left">
+              <h1 class='c-title'> Contact me</h1>
+              <div className="c-info">
+                  <div className="c-info-item">
+                      <img src= {Phone} alt="" className='c-icon'/> +46-724442729
+                  </div>
+                  <div className="c-info-item">
+                      <img src= {Email} alt="" className='c-icon'/> kavinu2010@gmail.com
+                  </div>
+                   
+                  <div className="c-info-item">
+                      <img src= {Address} alt="" className='c-icon'/> Lijeholmen, Stockholm
+                  </div>
+              </div>
+    </div>
+</section>
+     
     <footer>
       <p>&copy; 2024 Kavitha M S
 . All rights reserved.</p>
        
     </footer>
 
-    <!-- EmailJS SDK -->
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"
-    ></script>
-    <script>
-      (function () {
-        emailjs.init("kavinu2010");
-      })();
-    </script>
-    <!-- Link to JavaScript -->
+     
     <script src="script.js"></script>
   </body>
 </html>
+
+ 
