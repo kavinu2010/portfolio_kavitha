@@ -287,9 +287,10 @@ section {
 
 .projects .texture {
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 40px;
   padding: 0 20px;
+  color: grey;
 }
 
 .projects-container {
